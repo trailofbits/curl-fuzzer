@@ -1,4 +1,9 @@
 # syntax=docker/dockerfile:1
+
+# Use the following commands to run fuzzing:
+# $ docker buildx build -t curl_fuzz .
+# $ docker run --rm -it --cap-add=NET_ADMIN curl_fuzz
+
 FROM aflplusplus/aflplusplus
 
 RUN apt-get update && apt-get install -y libssl-dev netcat iptables groff
