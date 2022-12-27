@@ -46,7 +46,7 @@ RUN cd curl && \
 	make install
 
 # Download a dictionary
-RUN wget https://gist.githubusercontent.com/ahpaleus/f94eca6b29ca8824cf6e5a160379612b/raw/3de91b2dfc5ddd8b4b2357b0eb7fbcdc257384c4/curl.dict
+RUN wget https://raw.githubusercontent.com/trailofbits/curl-fuzzer/master/argv_fuzzing/curl.dict
 
 COPY <<-EOT script.sh
 	#!/bin/bash
